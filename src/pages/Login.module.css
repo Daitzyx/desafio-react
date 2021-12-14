@@ -16,18 +16,23 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-h2::after {
-  content: "";
-  width: 4.5rem;
+
+.title {
+  padding: 0 2rem;
+   
+}
+title::after {
+  content: '';
+  width:6.5rem;
   background-color: #4c1691;
   position: absolute;
-
+  
   height: 6px;
   bottom: 1px;
-  left: 486px;
-  top: 170px;
+  top: 190px;
   border-radius: 15px;
 }
+
 a {
   color: #4c1691;
   text-decoration: none;
@@ -50,14 +55,37 @@ a {
   margin-right: 20px;
 }
 
+input[type="checkbox"] {
+  display: none;
+  border-radius: 50%;
+}
+
+input[type="checkbox"] + label:before,
+input[type="checkbox"] + label:before {
+  border-radius: 50%;
+  border: 1px solid #5d5c5c;
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  vertical-align: center;
+  width: 1rem;
+  margin: -0.2rem 1rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:checked + label:before {
+  background: #4c1691;
+  cursor: pointer;
+}
+
 .endCard {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
   margin-left: 35px;
-  color: #6A6F73;
-
+  color: #6a6f73;
 }
 .endDiv {
   display: flex;

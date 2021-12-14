@@ -12,7 +12,7 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const cript = btoa('3035teachapp : 3035teach-secret')
+  const cript = btoa('3035teachapp:3035teach-secret')
   
   
 
@@ -24,9 +24,9 @@ function Login() {
   }, []);
   async function loginIn(e) {
     e.preventDefault();
-    const basicAuth = 'Basic 3035teachapp:3035teach-secret';
+    const basicAuth = `Basic ${btoa('3035teachapp:3035teach-secret')}`;
     const urlPost = `https://back-3035teach.herokuapp.com/oauth/token?username=${email}&password=${password}&grant_type=password`;
-    
+
 
     // let result = await fetch(
     //     urlPost ,
@@ -41,37 +41,25 @@ function Login() {
     //   }
     // );
 
-    debugger
-    axios.defaults.headers.common['Authorization'] = 'Basic ' + cript;
+    axios.defaults.headers.common['Authorization'] = basicAuth;
     axios.defaults.headers.common['Content-Type'] = "application/json";
     await axios.post(urlPost, {})
+    window.location.replace('https://www.3035tech.com/#/')
     
-    debugger
   }
 
-  // function submitLoginHandler(e){-
-  //     e.preventDefault();
-
-  // }
-
-  // const onclickFunc = () => {
-  //     debugger
-  //     alert('aaa');
-  // }
 
   return (
     <>
-      {/* <MainNavigation /> */}
       <h1>Faça login em sua conta</h1>
       <Card>
         <form
           className={style.login}
           id="login"
           onSubmit={loginIn}
-          // onSubmit={submitLoginHandler}
-          // method="post" action="/"
+          method="post" action="/"
         >
-          <div>
+          <div className={style.title}>
             <h2>Login</h2>
           </div>
 
@@ -102,8 +90,8 @@ function Login() {
 
           <div className={style.endCard}>
             <div className={style.endDiv}>
-              <input className={style.lembrarbutton} type="checkbox" />
-              <label htmlFor="">Lembrar de mim</label>
+              <input className={style.lembrarbutton} id="remind" type="checkbox" />
+              <label htmlFor="remind">Lembrar de mim</label>
             </div>
             <a href="/resetpassword">Esqueci a senha</a>
           </div>

@@ -1,6 +1,4 @@
 
-// import { useHisory } from 'react-router-dom'
-
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 
@@ -8,6 +6,7 @@ import style from "./SignUp.module.css";
 
 import Button from "../components/layout/Button";
 import Card from "../components/ui/Card";
+import PasswordStrength from "../components/ui/PasswordStrength";
 
 import { HiOutlineMail,HiOutlineLockClosed } from "react-icons/hi";
 import {FaUser} from "react-icons/fa"
@@ -18,14 +17,6 @@ function SignUpPage() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-
-  
-    // function register(e){
-    //     debugger
-    //     alert('oi')
-    //     e.preventDefault()
-    //     console.warn(name,email,password)
-    // }
     const history = useHistory();
   useEffect(() => {
     if (localStorage.getItem("user-info")) {
@@ -35,7 +26,7 @@ function SignUpPage() {
     e.preventDefault();
 
     let item = { name, email, password };
-    debugger
+    
     let result = await fetch(
       "https://back-3035teach.herokuapp.com/profile/sign-up",
       {
@@ -55,13 +46,8 @@ function SignUpPage() {
         //trata os erros
     }
   }
-    // const register = () => {
-    //     alert('aaa');
-    // }
-
     return(
     <>
-    {/* <MainNavigation /> */}
     <h1></h1>
         <Card className="cardSignUp"> 
             <form className={style.signUp} id="signup" onSubmit={register}
@@ -106,6 +92,7 @@ function SignUpPage() {
                     onChange={(e)=> setPassword(e.target.value)}
                     />
                 </div>
+                < PasswordStrength password={password} />
 
                 <Button className="btnCard"  type='submit'
                 >Fazer Login</Button>

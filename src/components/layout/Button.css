@@ -36,3 +36,7 @@ margin-top: 20px;
 .button a:hover{
   color: #060606;
 }
+
+.btn-header{
+  margin-right: 30px;
+}
