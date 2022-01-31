@@ -13,9 +13,9 @@ function MainNavigation() {
         <div >
             <img className={classes.logo} src={logo} alt='Logo'/>
         </div>
-            <nav>
+        <nav>
             <Button className="btn-header"><Link to='/signup'>Cadastre-se</Link></Button>
-            </nav>
+        </nav>
     </nav>
     </>
 }

@@ -1,7 +1,6 @@
-
 .title {
   padding: 0 2rem;
-  position:relative;
+  position: relative;
 }
 .title::after {
   content: "";
@@ -14,97 +13,99 @@
   left: 70px;
   border-radius: 15px;
 }
-.inputSignUp{
-    border: 1px solid #bdbdbd;
+.inputSignUp {
+  border: 1px solid #bdbdbd;
 }
 
 h1 {
-    font-size: 28px;
-    margin-right: 165px;
-    margin-bottom: -10px;
-    padding-top: 10px;
-  }
-  form h2 {
-    text-align: start;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 33px;
-    padding: 0 2.5rem;
-  }
-  hr {
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+  font-size: 28px;
+  margin-right: 165px;
+  margin-bottom: -10px;
+  padding-top: 10px;
+}
+form h2 {
+  text-align: start;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  padding: 0 2.5rem;
+}
+hr {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
-  a {
-    color: #4c1691;
-    height: 18px;
-    margin-right: 40px;
-  }
-  
-  .inputcard {
-    width: 100%;
-    border-radius: 10px;
-    padding: 10px;
-    border: none;
-    font-size: 20px;
-    margin-left: 10px;
-  }
-  
-  .endCard {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-    color: #6A6F73;
-    font-size: 15px;
-  }
+a {
+  color: #4c1691;
+  height: 18px;
+  margin-right: 40px;
+}
 
-  .loginInputEmail svg,
-  .loginInputPassword svg, .loginInputNome svg {
-    margin-left: 20px;
-    font-size: 20px;
-  }
-  
-  .loginInputEmail,
-  .loginInputPassword, .loginInputNome {
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    width: 400px;
-    height: 58px;
-    border: 1px solid #bdbdbd;
-    color: #6a6f73;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    margin-bottom: 20px;
-    margin: 20px 35px;
-  }
-  span{
-    margin: 0 auto;
-  }
+.inputcard {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  margin-left: 10px;
+}
 
-  .spanMsg{
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    width: 400px;
-    height: 45px;
-    border: 1px solid #FCAEA0;
-    color: #6a6f73;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
-    margin-bottom: 0px;
-    margin: 20px 35px -10px 35px;
-  }
+.endCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: #6a6f73;
+  font-size: 15px;
+}
 
-  .spanMsg{
-    display: none;
-  }
+.loginInputEmail svg,
+.loginInputPassword svg,
+.loginInputNome svg {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.loginInputEmail,
+.loginInputPassword,
+.loginInputNome {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  width: 400px;
+  height: 58px;
+  border: 1px solid #bdbdbd;
+  color: #6a6f73;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 20px;
+  margin: 20px 35px;
+}
+span {
+  margin: 0 auto;
+}
+
+.spanMsg {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  width: 400px;
+  height: 45px;
+  border: 1px solid #fcaea0;
+  color: #6a6f73;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin: 20px 35px -10px 35px;
+}
+
+.spanMsg {
+  display: none;
+}

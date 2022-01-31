@@ -9,7 +9,7 @@
   border: 1px solid #060606;
   border-radius: 10px;
 
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -17,26 +17,26 @@
   text-align: center;
 }
 
-.button.btnCard{
-  background: #4C1691 !important;
+.button.btnCard {
+  background: #4c1691 !important;
   width: 397px;
-height: 58px;
-left: 523px;
-top: 624px;
-color: #ffffff;
-border-radius: 10px;
-font-size: 20px;
-margin-top: 20px;
+  height: 58px;
+  left: 523px;
+  top: 624px;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
-.button a{
+.button a {
   margin-right: 0px;
   color: #060606;
 }
-.button a:hover{
+.button a:hover {
   color: #060606;
 }
 
-.btn-header{
+.btn-header {
   margin-right: 30px;
 }

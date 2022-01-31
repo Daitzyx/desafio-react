@@ -1,22 +1,22 @@
 .header {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    height: 100px;
-    left: 0px;
-    top: 0px;
-    box-shadow: 10px 10px 58px rgba(0, 0, 0, 0.11);
-    padding: 21px 21px 21px 35px;
-    font-family:  'Roboto';
-  }
-  
-  .logo {
-    width: 161px;
-    height: 35px;
-    left: 35px;
-    top: 30px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  box-shadow: 10px 10px 58px rgba(0, 0, 0, 0.11);
+  padding: 21px 21px 21px 35px;
+  font-family: "Roboto";
+  z-index: 1;
+}
 
+.logo {
+  width: 161px;
+  height: 35px;
+  left: 35px;
+  top: 30px;
+}
