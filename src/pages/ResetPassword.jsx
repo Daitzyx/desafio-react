@@ -13,8 +13,8 @@ function Login() {
         <h1> </h1>
         <Card className="cardResetPassword"> 
             <form className={style.signUp} id="resetpassword" method="post" action="/">
-                <div>
-                    <h2 className={style.title}>Esqueci a senha</h2>
+                <div className={style.title}>
+                    <h2 >Esqueci a senha</h2>
                 </div>
     
                 <hr />

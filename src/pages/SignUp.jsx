@@ -53,8 +53,8 @@ function SignUpPage() {
             <form className={style.signUp} id="signup" onSubmit={register}
             method="post" action="/"
             >
-                <div>
-                    <h2 className={style.title}>Cadastre-se</h2>
+                <div className={style.title}>
+                    <h2>Cadastre-se</h2>
                 </div>
     
                 <hr />

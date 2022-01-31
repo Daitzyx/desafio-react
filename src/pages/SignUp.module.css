@@ -1,15 +1,18 @@
 
+.title {
+  padding: 0 2rem;
+  position:relative;
+}
 .title::after {
-    content: "";
-    width: 4.5rem;
-    background-color: #4c1691;
-    position: absolute;
-  
-    height: 6px;
-    bottom: 1px;
-    left: 489px;
-    top: 170px;
-    border-radius: 15px;
+  content: "";
+  width: 9.5rem;
+  background-color: #4c1691;
+  position: absolute;
+
+  height: 6px;
+  bottom: -14px;
+  left: 70px;
+  border-radius: 15px;
 }
 .inputSignUp{
     border: 1px solid #bdbdbd;

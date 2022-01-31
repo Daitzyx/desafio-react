@@ -19,17 +19,17 @@ hr {
 
 .title {
   padding: 0 2rem;
-   
+  position: relative;
 }
-title::after {
-  content: '';
-  width:6.5rem;
+.title::after {
+  content: "";
+  width: 4.5rem;
   background-color: #4c1691;
   position: absolute;
-  
+
   height: 6px;
-  bottom: 1px;
-  top: 190px;
+  bottom: -14px;
+  left: 70px;
   border-radius: 15px;
 }
 
